@@ -1,0 +1,10 @@
+name: ssmenu
+version: '${version}'
+
+main: from2016.ssmenu.Ssmenu
+api-version: '1.21.4'
+load: POSTWORLD
+commands:
+  checkmenu:
+    permission: plugin.checkmenu
+

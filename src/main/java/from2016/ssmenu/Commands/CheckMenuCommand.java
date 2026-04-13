@@ -1,6 +1,6 @@
 package from2016.ssmenu.Commands;
 
-import from2016.ssmenu.gui.BanMenuGUI;
+import from2016.ssmenu.gui.MainMenuGUI;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -30,7 +30,7 @@ public class CheckMenuCommand implements CommandExecutor {
             return true;
         }
 
-        BanMenuGUI.open(staff, target);
+        MainMenuGUI.open(staff, target);
 
         return true;
     }

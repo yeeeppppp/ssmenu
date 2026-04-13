@@ -15,11 +15,13 @@ public class Ssmenu extends JavaPlugin {
         getCommand("checkmenu").setExecutor(new CheckMenuCommand());
         getServer().getPluginManager().registerEvents(new GUIListener(), this);
 
+        getLogger().info("§aSsmenu плагин включен!");
     }
 
     @Override
     public void onDisable() {
-
+        getLogger().info("§cSsmenu плагин выключен!");
+        instance = null;
     }
 
     public static Ssmenu getInstance() {
